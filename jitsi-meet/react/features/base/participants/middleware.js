@@ -19,6 +19,7 @@ import {
     GRANT_MODERATOR,
     KICK_PARTICIPANT,
     MUTE_REMOTE_PARTICIPANT,
+	UNMUTE_REMOTE_PARTICIPANT,
     PARTICIPANT_DISPLAY_NAME_CHANGED,
     PARTICIPANT_JOINED,
     PARTICIPANT_LEFT,
@@ -116,7 +117,12 @@ MiddlewareRegistry.register(store => next => action => {
         conference.muteParticipant(action.id, action.mediaType);
         break;
     }
-
+ // mute-unmute-XX
+    case UNMUTE_REMOTE_PARTICIPANT: {
+        const { conference } = store.getState()['features/base/conference'];
+        conference.unMuteParticipant(action.id);
+        break;
+    }
     // TODO Remove this middleware when the local display name update flow is
     // fully brought into redux.
     case PARTICIPANT_DISPLAY_NAME_CHANGED: {

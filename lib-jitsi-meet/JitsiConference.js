@@ -1562,6 +1562,15 @@ JitsiConference.prototype.muteParticipant = function(id, mediaType) {
     this.room.muteParticipant(participant.getJid(), true, muteMediaType);
 };
 
+
+JitsiConference.prototype.unMuteParticipant = function(id) {
+    const participant = this.getParticipantById(id);
+
+    if (!participant) {
+        return;
+    }
+    this.room.muteParticipant(participant.getJid(), false);
+};
 /* eslint-disable max-params */
 
 /**

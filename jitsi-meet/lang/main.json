@@ -240,7 +240,18 @@
         "micPermissionDeniedError": "You have not granted permission to use your microphone. You can still join the conference but others won't hear you. Use the camera button in the address bar to fix this.",
         "micTimeoutError": "Could not start audio source. Timeout occured!",
         "micUnknownError": "Cannot use microphone for an unknown reason.",
-        "muteEveryoneElseDialog": "Once muted, you won't be able to unmute them, but they can unmute themselves at any time.",
+        
+		"muteParticipantBody": "You can unmute the participant whenever you want.",
+		"muteParticipantButton": "Mute",
+		"muteParticipantDialog": "Are you sure you want to mute this participant?",
+		"muteParticipantTitle": "Mute this participant?",
+
+		"unMuteParticipantBody": "You can mute the participant whenever you want",
+		"unMuteParticipantButton": "Unmute",
+		"unMuteParticipantDialog": "Are you sure you want to unmute this participant?",
+		"unMuteParticipantTitle": "Unmute this participant?",
+		
+		"muteEveryoneElseDialog": "Once muted, you won't be able to unmute them, but they can unmute themselves at any time.",
         "muteEveryoneElseTitle": "Mute everyone except {{whom}}?",
         "muteEveryoneDialog": "Are you sure you want to mute everyone? You won't be able to unmute them, but they can unmute themselves at any time.",
         "muteEveryoneTitle": "Mute everyone?",
