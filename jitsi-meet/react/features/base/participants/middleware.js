@@ -120,7 +120,7 @@ MiddlewareRegistry.register(store => next => action => {
  // mute-unmute-XX
     case UNMUTE_REMOTE_PARTICIPANT: {
         const { conference } = store.getState()['features/base/conference'];
-        conference.unMuteParticipant(action.id);
+        conference.unMuteParticipant(action.id, action.mediaType);
         break;
     }
     // TODO Remove this middleware when the local display name update flow is
