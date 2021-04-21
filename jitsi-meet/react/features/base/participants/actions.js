@@ -210,7 +210,7 @@ export function muteRemoteParticipant(id, mediaType) {
     };
 }
 
-export function muteRemoteParticipant(id, mediaType) {
+export function unMuteRemoteParticipant(id, mediaType) {
     return {
         type: UNMUTE_REMOTE_PARTICIPANT,
         id,
