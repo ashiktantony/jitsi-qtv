@@ -54,7 +54,7 @@ var interfaceConfig = {
     DEFAULT_BACKGROUND: '#8b0000',
     DEFAULT_LOCAL_DISPLAY_NAME: 'me',
     DEFAULT_LOGO_URL: 'images/watermark.svg',
-    DEFAULT_REMOTE_DISPLAY_NAME: 'Thomas Shelby',
+    DEFAULT_REMOTE_DISPLAY_NAME: 'jitser',
     DEFAULT_WELCOME_PAGE_LOGO_URL: 'images/watermark.svg',
 
     DISABLE_DOMINANT_SPEAKER_INDICATOR: false,
@@ -138,7 +138,7 @@ var interfaceConfig = {
      *
      * @type {boolean}
      */
-    MOBILE_APP_PROMO: false,
+    MOBILE_APP_PROMO: true,
 
     /**
      * Specify custom URL for downloading android mobile app.
