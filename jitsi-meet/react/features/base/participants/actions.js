@@ -8,6 +8,7 @@ import {
     GRANT_MODERATOR,
     KICK_PARTICIPANT,
     MUTE_REMOTE_PARTICIPANT,
+	UNMUTE_REMOTE_PARTICIPANT,
     PARTICIPANT_ID_CHANGED,
     PARTICIPANT_JOINED,
     PARTICIPANT_KICKED,
@@ -209,6 +210,13 @@ export function muteRemoteParticipant(id, mediaType) {
     };
 }
 
+export function muteRemoteParticipant(id, mediaType) {
+    return {
+        type: UNMUTE_REMOTE_PARTICIPANT,
+        id,
+        mediaType
+    };
+}
 /**
  * Action to update a participant's connection status.
  *

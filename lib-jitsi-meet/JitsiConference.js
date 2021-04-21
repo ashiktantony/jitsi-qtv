@@ -1563,13 +1563,22 @@ JitsiConference.prototype.muteParticipant = function(id, mediaType) {
 };
 
 
-JitsiConference.prototype.unMuteParticipant = function(id) {
-    const participant = this.getParticipantById(id);
+JitsiConference.prototype.unMuteParticipant = function(id, mediaType) {
+    
+	const muteMediaType = mediaType ? mediaType : MediaType.AUDIO;
+
+    if (muteMediaType !== MediaType.AUDIO && muteMediaType !== MediaType.VIDEO) {
+        logger.error(`Unsupported media type: ${muteMediaType}`);
+
+        return;
+    }
+	
+	const participant = this.getParticipantById(id);
 
     if (!participant) {
         return;
     }
-    this.room.muteParticipant(participant.getJid(), false);
+    this.room.muteParticipant(participant.getJid(), false, muteMediaType);
 };
 /* eslint-disable max-params */
 

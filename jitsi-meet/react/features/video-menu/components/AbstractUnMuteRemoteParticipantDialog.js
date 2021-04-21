@@ -1,8 +1,9 @@
-// @flow
+// mute-unmute-XX - created AbstractMuteRemoteParticipantDialog Component
 
 import { Component } from 'react';
 
-import { muteRemote } from '../actions';
+import { MEDIA_TYPE } from '../../base/media';
+import { unMuteRemote } from '../actions';
 
 /**
  * The type of the React {@code Component} props of
@@ -47,7 +48,6 @@ export default class AbstractMuteRemoteParticipantDialog<P:Props = Props>
     }
 
     _onSubmit: () => boolean;
-
     /**
      * Handles the submit button action.
      *
@@ -57,7 +57,7 @@ export default class AbstractMuteRemoteParticipantDialog<P:Props = Props>
     _onSubmit() {
         const { dispatch, participantID } = this.props;
 
-        dispatch(muteRemote(participantID));
+        dispatch(unMuteRemote(participantID, MEDIA_TYPE.AUDIO));
 
         return true;
     }

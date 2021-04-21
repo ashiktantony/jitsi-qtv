@@ -126,9 +126,9 @@ JitsiConferenceEventManager.prototype.setupChatRoomListeners = function() {
             // TODO: Add a way to differentiate between commands which caused
             // us to mute and those that did not change our state (i.e. we were
             // already muted).
-            Statistics.sendAnalytics(createRemotelyMutedEvent());
+            Statistics.sendAnalytics(createRemotelyMutedEvent(MediaType.AUDIO));
     
-           // conference.mutedByFocusActor = actor;
+            conference.mutedByFocusActor = actor;
     
             // set isMutedByFocus when setAudioMute Promise ends
             conference.rtc.setAudioMute(false).then(
