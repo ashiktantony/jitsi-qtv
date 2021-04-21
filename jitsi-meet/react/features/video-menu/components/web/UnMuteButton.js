@@ -51,7 +51,7 @@ class UnMuteButton extends AbstractUnMuteButton {
         };
 
         return (
-            <RemoteVideoMenuButton
+            <VideoMenuButton
                 buttonText = { t('Unmute') }
                 displayClass = { muteConfig.muteClassName }
                 icon = { IconMicrophone }
