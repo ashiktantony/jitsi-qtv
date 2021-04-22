@@ -53,23 +53,23 @@ var interfaceConfig = {
 
     DEFAULT_BACKGROUND: '#8b0000',
     DEFAULT_LOCAL_DISPLAY_NAME: 'me',
-    DEFAULT_LOGO_URL: 'images/watermark.svg',
+    DEFAULT_LOGO_URL: 'images/watermark.png',
     DEFAULT_REMOTE_DISPLAY_NAME: 'jitser',
-    DEFAULT_WELCOME_PAGE_LOGO_URL: 'images/watermark.svg',
+    DEFAULT_WELCOME_PAGE_LOGO_URL: 'images/watermark.png',
 
-    DISABLE_DOMINANT_SPEAKER_INDICATOR: false,
+    DISABLE_DOMINANT_SPEAKER_INDICATOR: true,//toggled
 
-    DISABLE_FOCUS_INDICATOR: false,
+    DISABLE_FOCUS_INDICATOR: true,//toggled
 
     /**
      * If true, notifications regarding joining/leaving are no longer displayed.
      */
-    DISABLE_JOIN_LEAVE_NOTIFICATIONS: true,
+    DISABLE_JOIN_LEAVE_NOTIFICATIONS: true,//toggled
 
     /**
      * If true, presence status: busy, calling, connected etc. is not displayed.
      */
-    DISABLE_PRESENCE_STATUS: false,
+    DISABLE_PRESENCE_STATUS: true,//toggled
 
     /**
      * Whether the ringing sound in the call/ring overlay is disabled. If
@@ -85,7 +85,7 @@ var interfaceConfig = {
      *
      * @type {boolean}
      */
-    DISABLE_TRANSCRIPTION_SUBTITLES: false,
+    DISABLE_TRANSCRIPTION_SUBTITLES: true,//toggled
 
     /**
      * Whether or not the blurred video background for large video should be
@@ -102,9 +102,9 @@ var interfaceConfig = {
 
     ENABLE_FEEDBACK_ANIMATION: false, // Enables feedback star animation.
 
-    FILM_STRIP_MAX_HEIGHT: 120,
+    FILM_STRIP_MAX_HEIGHT: 60,
 
-    GENERATE_ROOMNAMES_ON_WELCOME_PAGE: true,
+    GENERATE_ROOMNAMES_ON_WELCOME_PAGE: false,//toggle
 
     /**
      * Hide the logo on the deep linking pages.
@@ -129,7 +129,8 @@ var interfaceConfig = {
      *
      * @type {number}
      */
-    MAXIMUM_ZOOMING_COEFFICIENT: 1.3,
+//     MAXIMUM_ZOOMING_COEFFICIENT: 1.3,
+    MAXIMUM_ZOOMING_COEFFICIENT: 1.0,//changed
 
     /**
      * Whether the mobile app Jitsi Meet is to be promoted to participants
@@ -138,7 +139,7 @@ var interfaceConfig = {
      *
      * @type {boolean}
      */
-    MOBILE_APP_PROMO: true,
+    MOBILE_APP_PROMO: false,
 
     /**
      * Specify custom URL for downloading android mobile app.
@@ -192,7 +193,7 @@ var interfaceConfig = {
     SHOW_CHROME_EXTENSION_BANNER: false,
 
     SHOW_DEEP_LINKING_IMAGE: false,
-    SHOW_JITSI_WATERMARK: false,
+    SHOW_JITSI_WATERMARK: true,
     SHOW_POWERED_BY: false,
     SHOW_PROMOTIONAL_CLOSE_PAGE: false,
 
@@ -245,7 +246,7 @@ var interfaceConfig = {
      * How many columns the tile view can expand to. The respected range is
      * between 1 and 5.
      */
-    // TILE_VIEW_MAX_COLUMNS: 5,
+    TILE_VIEW_MAX_COLUMNS: 1, //changed
 
     /**
      * Specify Firebase dynamic link properties for the mobile apps.
