@@ -101,7 +101,7 @@ var config = {
     // selected microphone. The purpose it to let the user know that the input could
     // be potentially unpleasant for other meeting participants.
     
-//     enableNoisyMicDetection: true, changed
+    enableNoisyMicDetection: true,   //changed
 
     // Start the conference in audio only mode (no video is being received nor
     // sent).
@@ -452,7 +452,7 @@ var config = {
        'livestreaming', 'etherpad', 'sharedvideo', 'shareaudio', 'settings', 
        'videoquality', 'filmstrip',  'feedback', 'stats', 'shortcuts',
        'tileview', 'select-background', 'download', 'help', 'mute-everyone', 'mute-video-everyone', 'security'
-    ],//changed
+    ], //changed
 
     // Stats
     //
@@ -710,7 +710,7 @@ var config = {
     // disableTileView: true,
 
     // Hides the conference subject
-    hideConferenceSubject: true,//changed
+    hideConferenceSubject: true, //changed
 
     // Hides the conference timer.
     // hideConferenceTimer: true,
