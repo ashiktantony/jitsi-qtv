@@ -4,6 +4,7 @@
     flex-wrap: nowrap;
     position: relative;
     width: $filmstripToggleButtonWidth;
+    visibility: hidden,
 
     button {
         font-size: 14px;
