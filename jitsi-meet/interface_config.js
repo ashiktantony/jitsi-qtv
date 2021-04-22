@@ -246,7 +246,7 @@ var interfaceConfig = {
      * How many columns the tile view can expand to. The respected range is
      * between 1 and 5.
      */
-    TILE_VIEW_MAX_COLUMNS: 1, //changed
+//     TILE_VIEW_MAX_COLUMNS: 1, 
 
     /**
      * Specify Firebase dynamic link properties for the mobile apps.
