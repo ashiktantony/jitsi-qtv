@@ -59,17 +59,17 @@ var interfaceConfig = {
 
     DISABLE_DOMINANT_SPEAKER_INDICATOR: true,//toggled
 
-    DISABLE_FOCUS_INDICATOR: true,//toggled
+    DISABLE_FOCUS_INDICATOR: true, //toggled
 
     /**
      * If true, notifications regarding joining/leaving are no longer displayed.
      */
-    DISABLE_JOIN_LEAVE_NOTIFICATIONS: true,//toggled
+    DISABLE_JOIN_LEAVE_NOTIFICATIONS: true, //toggled
 
     /**
      * If true, presence status: busy, calling, connected etc. is not displayed.
      */
-    DISABLE_PRESENCE_STATUS: true,//toggled
+    DISABLE_PRESENCE_STATUS: true, //toggled
 
     /**
      * Whether the ringing sound in the call/ring overlay is disabled. If
@@ -85,7 +85,7 @@ var interfaceConfig = {
      *
      * @type {boolean}
      */
-    DISABLE_TRANSCRIPTION_SUBTITLES: true,//toggled
+    DISABLE_TRANSCRIPTION_SUBTITLES: true, //toggled
 
     /**
      * Whether or not the blurred video background for large video should be
@@ -130,7 +130,7 @@ var interfaceConfig = {
      * @type {number}
      */
 //     MAXIMUM_ZOOMING_COEFFICIENT: 1.3,
-    MAXIMUM_ZOOMING_COEFFICIENT: 1.0,//changed
+    MAXIMUM_ZOOMING_COEFFICIENT: 1.0, //changed
 
     /**
      * Whether the mobile app Jitsi Meet is to be promoted to participants
