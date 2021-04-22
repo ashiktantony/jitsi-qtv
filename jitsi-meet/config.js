@@ -448,11 +448,11 @@ var config = {
     // ],
     
     toolbarButtons: [
-//        'microphone', 'camera', 'closedcaptions', 'desktop', 'embedmeeting', 'fullscreen',
-//        'fodeviceselection', 'hangup', 'profile',  'recording',
-//        'livestreaming', 'etherpad', 'sharedvideo', 'shareaudio', 'settings', 
-//        'videoquality', 'filmstrip',  'feedback', 'stats', 'shortcuts',
-//        'tileview', 'select-background', 'download', 'help', 'mute-everyone', 'mute-video-everyone', 'security'
+       'microphone', 'camera', 'closedcaptions', 'desktop', 'embedmeeting', 'fullscreen',
+       'fodeviceselection', 'hangup', 'profile',  'recording',
+       'livestreaming', 'etherpad', 'sharedvideo', 'shareaudio', 'settings', 
+       'videoquality', 'filmstrip',  'feedback', 'stats', 'shortcuts',
+       'tileview', 'select-background', 'download', 'help', 'mute-everyone', 'mute-video-everyone', 'security'
     ], 
 
     // Stats
