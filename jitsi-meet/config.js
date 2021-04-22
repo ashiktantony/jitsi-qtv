@@ -100,7 +100,8 @@ var config = {
     // notify the user if there is noise, other than voice, coming from the current
     // selected microphone. The purpose it to let the user know that the input could
     // be potentially unpleasant for other meeting participants.
-    enableNoisyMicDetection: true,
+    
+//     enableNoisyMicDetection: true, changed
 
     // Start the conference in audio only mode (no video is being received nor
     // sent).
@@ -445,6 +446,13 @@ var config = {
     //    'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
     //    'tileview', 'select-background', 'download', 'help', 'mute-everyone', 'mute-video-everyone', 'security'
     // ],
+    toolbarButtons: [
+       'microphone', 'camera', 'closedcaptions', 'desktop', 'embedmeeting', 'fullscreen',
+       'fodeviceselection', 'hangup', 'profile',  'recording',
+       'livestreaming', 'etherpad', 'sharedvideo', 'shareaudio', 'settings', 
+       'videoquality', 'filmstrip',  'feedback', 'stats', 'shortcuts',
+       'tileview', 'select-background', 'download', 'help', 'mute-everyone', 'mute-video-everyone', 'security'
+    ],//changed
 
     // Stats
     //
@@ -691,7 +699,7 @@ var config = {
     // dynamicBrandingUrl: '',
 
     // Sets the background transparency level. '0' is fully transparent, '1' is opaque.
-    // backgroundAlpha: 1,
+    backgroundAlpha: 0, //changed
 
     // The URL of the moderated rooms microservice, if available. If it
     // is present, a link to the service will be rendered on the welcome page,
@@ -702,7 +710,7 @@ var config = {
     // disableTileView: true,
 
     // Hides the conference subject
-    // hideConferenceSubject: true,
+    hideConferenceSubject: true,//changed
 
     // Hides the conference timer.
     // hideConferenceTimer: true,
