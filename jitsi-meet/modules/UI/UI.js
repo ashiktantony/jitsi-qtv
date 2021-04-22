@@ -125,6 +125,8 @@ UI.start = function() {
     VideoLayout.resizeVideoArea();
 
     sharedVideoManager = new SharedVideoManager(eventEmitter);
+    APP.store.dispatch(setFilmstripVisible(false));
+
 
     if (isMobileBrowser()) {
         $('body').addClass('mobile-browser');
