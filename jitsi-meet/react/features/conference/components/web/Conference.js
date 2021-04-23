@@ -201,7 +201,7 @@ class Conference extends AbstractConference<Props, *> {
                 { _showPrejoin || _isLobbyScreenVisible || <Toolbox /> }
                 <Chat />
 
-                { this.renderNotificationsContainer() }
+//                 { this.renderNotificationsContainer() }
 
                 <CalleeInfoContainer />
 
