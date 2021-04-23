@@ -33,22 +33,22 @@ const getWiFiStatsMethod = () => {
  * @returns {void}
  */
 export function maybeShowSuboptimalExperienceNotification(dispatch, t) {
-    if (isSuboptimalBrowser()) {
-        dispatch(
-            showWarningNotification(
-                {
-                    titleKey: 'notify.suboptimalExperienceTitle',
-                    description: translateToHTML(
-                        t,
-                        'notify.suboptimalBrowserWarning',
-                        {
-                            recommendedBrowserPageLink: `${window.location.origin}/static/recommendedBrowsers.html`
-                        }
-                    )
-                }
-            )
-        );
-    }
+//     if (isSuboptimalBrowser()) {
+//         dispatch(
+//             showWarningNotification(
+//                 {
+//                     titleKey: 'notify.suboptimalExperienceTitle',
+//                     description: translateToHTML(
+//                         t,
+//                         'notify.suboptimalBrowserWarning',
+//                         {
+//                             recommendedBrowserPageLink: `${window.location.origin}/static/recommendedBrowsers.html`
+//                         }
+//                     )
+//                 }
+//             )
+//         );
+//     }
 }
 
 /**
