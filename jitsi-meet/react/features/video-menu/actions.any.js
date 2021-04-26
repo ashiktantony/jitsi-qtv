@@ -19,6 +19,7 @@ import {
 import {
     getLocalParticipant,
     muteRemoteParticipant,
+    disableCamRemoteParticipant, //added
 	unMuteRemoteParticipant
 } from '../base/participants';
 
@@ -33,6 +34,13 @@ const logger = getLogger(__filename);
  * @param {MEDIA_TYPE} mediaType - The type of the media channel to mute.
  * @returns {Function}
  */
+export function disableCamRemoteParticipant(participantId: string) {
+    return (dispatch: Dispatch<any>) => {
+        sendAnalytics(createRemoteMuteConfirmedEvent(participantId));
+        dispatch(unMuteRemoteParticipant(participantId));
+    };
+}
+
 export function muteLocal(enable: boolean, mediaType: MEDIA_TYPE) {
     return (dispatch: Dispatch<any>) => {
         const isAudio = mediaType === MEDIA_TYPE.AUDIO;
@@ -84,6 +92,15 @@ export function unMuteRemote(participantId: string, mediaType: MEDIA_TYPE) {
         }
         sendAnalytics(createRemoteMuteConfirmedEvent(participantId, mediaType));
         dispatch(unMuteRemoteParticipant(participantId, mediaType));
+    };
+}
+
+// disable_cam_participants
+
+export function disableCamRemote(participantId: string) {
+    return (dispatch: Dispatch<any>) => {
+        sendAnalytics(createRemoteMuteConfirmedEvent(participantId));
+        dispatch(disableCamRemoteParticipant(participantId));
     };
 }
 
