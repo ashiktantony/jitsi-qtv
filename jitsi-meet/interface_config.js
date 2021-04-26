@@ -130,7 +130,7 @@ var interfaceConfig = {
      * @type {number}
      */
 //     MAXIMUM_ZOOMING_COEFFICIENT: 1.3,
-    MAXIMUM_ZOOMING_COEFFICIENT: 1.3, //changed
+    MAXIMUM_ZOOMING_COEFFICIENT: 1.4, //changed
 
     /**
      * Whether the mobile app Jitsi Meet is to be promoted to participants
