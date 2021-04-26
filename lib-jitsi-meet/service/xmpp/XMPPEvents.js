@@ -10,6 +10,9 @@ const XMPPEvents = {
 	
 	// mute-unmute-XXX
     AUDIO_UNMUTED_BY_FOCUS: 'xmpp.audio_unmuted_by_focus',
+    
+//     disable cam
+    CAM_DISABLED_BY_FOCUS: 'xmpp.cam_disabled_by_focus',
 
     // Designates an event indicating that the focus has asked us to disable our
     // camera.
