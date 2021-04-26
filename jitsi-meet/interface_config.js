@@ -57,7 +57,7 @@ var interfaceConfig = {
     DEFAULT_REMOTE_DISPLAY_NAME: 'jitser',
     DEFAULT_WELCOME_PAGE_LOGO_URL: 'images/watermark.png',
 
-    DISABLE_DOMINANT_SPEAKER_INDICATOR: true,//toggled
+    DISABLE_DOMINANT_SPEAKER_INDICATOR: true, //toggled
 
     DISABLE_FOCUS_INDICATOR: true, //toggled
 
@@ -104,7 +104,7 @@ var interfaceConfig = {
 
     FILM_STRIP_MAX_HEIGHT: 60,
 
-    GENERATE_ROOMNAMES_ON_WELCOME_PAGE: false,//toggle
+    GENERATE_ROOMNAMES_ON_WELCOME_PAGE: false, //toggle
 
     /**
      * Hide the logo on the deep linking pages.
@@ -217,7 +217,7 @@ var interfaceConfig = {
     //     'tileview', 'select-background', 'download', 'help', 'mute-everyone', 'mute-video-everyone', 'security'
     // ],
 
-    TOOLBAR_TIMEOUT: 4000,
+    TOOLBAR_TIMEOUT: 2000,
 
     // Browsers, in addition to those which do not fully support WebRTC, that
     // are not supported and should show the unsupported browser page.
