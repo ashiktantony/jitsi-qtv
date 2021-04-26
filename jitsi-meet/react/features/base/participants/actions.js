@@ -9,6 +9,7 @@ import {
     KICK_PARTICIPANT,
     MUTE_REMOTE_PARTICIPANT,
 	UNMUTE_REMOTE_PARTICIPANT,
+    DISABLECAM_REMOTE_PARTICIPANT,
     PARTICIPANT_ID_CHANGED,
     PARTICIPANT_JOINED,
     PARTICIPANT_KICKED,
@@ -215,6 +216,13 @@ export function unMuteRemoteParticipant(id, mediaType) {
         type: UNMUTE_REMOTE_PARTICIPANT,
         id,
         mediaType
+    };
+}
+
+export function disableCamRemoteParticipant(id) {
+    return {
+        type: DISABLECAM_REMOTE_PARTICIPANT,
+        id
     };
 }
 /**
