@@ -9,14 +9,14 @@ import {
     KICK_PARTICIPANT,
     MUTE_REMOTE_PARTICIPANT,
 	UNMUTE_REMOTE_PARTICIPANT,
-    DISABLECAM_REMOTE_PARTICIPANT,
     PARTICIPANT_ID_CHANGED,
     PARTICIPANT_JOINED,
     PARTICIPANT_KICKED,
     PARTICIPANT_LEFT,
     PARTICIPANT_UPDATED,
     PIN_PARTICIPANT,
-    SET_LOADABLE_AVATAR_URL
+    SET_LOADABLE_AVATAR_URL,
+    UNMUTE_VIDEO_REMOTE_PARTICIPANT //added
 } from './actionTypes';
 import {
     DISCO_REMOTE_CONTROL_FEATURE
@@ -219,9 +219,9 @@ export function unMuteRemoteParticipant(id, mediaType) {
     };
 }
 
-export function disableCamRemoteParticipant(id) {
+export function unMuteVideoRemoteParticipant(id) {
     return {
-        type: DISABLECAM_REMOTE_PARTICIPANT,
+        type: UNMUTE_VIDEO_REMOTE_PARTICIPANT,
         id
     };
 }
