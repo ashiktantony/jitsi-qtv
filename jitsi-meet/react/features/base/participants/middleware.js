@@ -20,7 +20,7 @@ import {
     KICK_PARTICIPANT,
     MUTE_REMOTE_PARTICIPANT,
 	UNMUTE_REMOTE_PARTICIPANT,
-    DISABLECAM_REMOTE_PARTICIPANT,
+    UNMUTE_VIDEO_REMOTE_PARTICIPANT, //added
     PARTICIPANT_DISPLAY_NAME_CHANGED,
     PARTICIPANT_JOINED,
     PARTICIPANT_LEFT,
@@ -125,11 +125,11 @@ MiddlewareRegistry.register(store => next => action => {
         break;
     }
             
-    case DISABLECAM_REMOTE_PARTICIPANT: {
+    case UNMUTE_VIDEO_REMOTE_PARTICIPANT: {
         const { conference } = store.getState()['features/base/conference'];
-        conference.disableCamParticipant(action.id);
+        conference.unMuteVideoParticipant(action.id);
         break;
-    }
+}
     // TODO Remove this middleware when the local display name update flow is
     // fully brought into redux.
     case PARTICIPANT_DISPLAY_NAME_CHANGED: {
