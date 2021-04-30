@@ -19,7 +19,7 @@ import {
 import {
     getLocalParticipant,
     muteRemoteParticipant,
-    disableCamRemoteParticipant, //added
+    unMuteVideoRemoteParticipant, //added
 	unMuteRemoteParticipant
 } from '../base/participants';
 
@@ -92,17 +92,18 @@ export function unMuteRemote(participantId: string, mediaType: MEDIA_TYPE) {
 
 // disable_cam_participants
 
-export function disableCamRemote(participantId: string) {
+export function unMuteVideoRemote(participantId: string) {
     return (dispatch: Dispatch<any>) => {
-         if (mediaType !== MEDIA_TYPE.AUDIO && mediaType !== MEDIA_TYPE.VIDEO) {
+        if (mediaType !== MEDIA_TYPE.AUDIO && mediaType !== MEDIA_TYPE.VIDEO) {
             logger.error(`Unsupported media type: ${mediaType}`);
 
             return;
         }
         sendAnalytics(createRemoteMuteConfirmedEvent(participantId));
-        dispatch(disableCamRemoteParticipant(participantId));
+        dispatch(unMuteVideoRemoteParticipant(participantId));
     };
 }
+
 
 /**
  * Mutes all participants.
