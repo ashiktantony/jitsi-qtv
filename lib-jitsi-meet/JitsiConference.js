@@ -1580,6 +1580,22 @@ JitsiConference.prototype.unMuteParticipant = function(id, mediaType) {
     }
     this.room.muteParticipant(participant.getJid(), false, UnmuteMediaType);
 };
+
+
+JitsiConference.prototype.unMuteVideoParticipant = function(id) {
+    const UnmuteMediaType = mediaType ? mediaType : MediaType.VIDEO;
+
+    if (UnmuteMediaType !== MediaType.AUDIO && UnmuteMediaType !== MediaType.VIDEO) {
+        logger.error(`Unsupported media type: ${UnmuteMediaType}`);
+
+        return;
+    const participant = this.getParticipantById(id);
+
+    if (!participant) {
+        return;
+    }
+    this.room.muteVideoParticipant(participant.getJid(), false);
+};
 /* eslint-disable max-params */
 
 /**
