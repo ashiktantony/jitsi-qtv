@@ -20,3 +20,7 @@ export { default as VideoMenu } from './VideoMenu';
 export { default as RemoteVideoMenuTriggerButton } from './RemoteVideoMenuTriggerButton';
 export { default as LocalVideoMenuTriggerButton } from './LocalVideoMenuTriggerButton';
 export { default as VolumeSlider } from './VolumeSlider';
+//camera
+export { default as UnMuteVideoButton } from './UnMuteVideoButton';
+export { default as UnMuteVideoRemoteParticipantDialog }
+from './UnMuteVideoRemoteParticipantDialog';
