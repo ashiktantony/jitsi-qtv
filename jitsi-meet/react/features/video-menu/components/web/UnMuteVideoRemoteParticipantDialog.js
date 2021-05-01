@@ -14,7 +14,7 @@ import AbstractUnMuteVideoRemoteParticipantsDialog
  *
  * @extends Component
  */
-class UnMuteVideoRemoteParticipantsDialog extends AbstractUnMuteVideoRemoteParticipantsDialog {
+class UnMuteVideoRemoteParticipantDialog extends AbstractUnMuteVideoRemoteParticipantsDialog {
     /**
      * Implements React's {@link Component#render()}.
      *
@@ -38,4 +38,4 @@ class UnMuteVideoRemoteParticipantsDialog extends AbstractUnMuteVideoRemoteParti
     _onSubmit: () => boolean;
 }
 
-export default translate(connect()(UnMuteVideoRemoteParticipantsDialog));
+export default translate(connect()(UnMuteVideoRemoteParticipantDialog));
