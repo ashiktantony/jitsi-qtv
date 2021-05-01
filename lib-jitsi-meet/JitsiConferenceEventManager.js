@@ -170,7 +170,7 @@ JitsiConferenceEventManager.prototype.setupChatRoomListeners = function() {
     );
 
 //     disable/enable cam
-    chatRoom.addListener(XMPPEvents.CAM_DISABLED_BY_FOCUS,
+    chatRoom.addListener(XMPPEvents.VIDEO_UNMUTED_BY_FOCUS,
     actor => {
         // TODO: Add a way to differentiate between commands which caused
         // us to mute and those that did not change our state (i.e. we were
@@ -180,14 +180,14 @@ JitsiConferenceEventManager.prototype.setupChatRoomListeners = function() {
        // conference.mutedByFocusActor = actor;
 
         // set isMutedByFocus when setAudioMute Promise ends
-        conference.rtc.setAudioMute(false).then(
+        conference.rtc.setVideoMute(false).then(
             () => {
-                conference.isMutedByFocus = false;
-                conference.mutedByFocusActor = null;
+                conference.isVideoMutedByFocus = true;
+                conference.mutedVideoByFocusActor= null;
             })
             .catch(
                 error => {
-                    conference.mutedByFocusActor = null;
+                    conference.mutedVideoByFocusActor = null;
                     logger.warn(
                         'Error while video unmuting due to focus request', error);
             });
