@@ -5,8 +5,8 @@ import React from 'react';
 import { Dialog } from '../../../base/dialog';
 import { translate } from '../../../base/i18n';
 import { connect } from '../../../base/redux';
-import AbstractUnMuteVideoRemoteParticipantsDialog
-    from '../AbstractUnMuteVideoRemoteParticipantsDialog';
+import AbstractUnMuteVideoRemoteParticipantDialog
+    from '../AbstractUnMuteVideoRemoteParticipantDialog';
 
 /**
  * A React Component with the contents for a dialog that asks for confirmation
@@ -14,7 +14,7 @@ import AbstractUnMuteVideoRemoteParticipantsDialog
  *
  * @extends Component
  */
-class UnMuteVideoRemoteParticipantDialog extends AbstractUnMuteVideoRemoteParticipantsDialog {
+class UnMuteVideoRemoteParticipantDialog extends AbstractUnMuteVideoRemoteParticipantDialog {
     /**
      * Implements React's {@link Component#render()}.
      *
