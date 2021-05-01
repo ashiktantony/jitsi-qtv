@@ -1784,7 +1784,7 @@ export default class ChatRoom extends Listenable {
 
             return;
         }
-        const mute = $(iq).find('mute');
+        const mute = $(iq).find('mute-video');
 
         if (mute.length && mute.text() === 'true') {
             this.eventEmitter.emit(XMPPEvents.VIDEO_MUTED_BY_FOCUS, mute.attr('actor'));
